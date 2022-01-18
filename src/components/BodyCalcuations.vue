@@ -10,15 +10,21 @@
             />
             <button @click="calculateDate(inputDate)" class="btn-calc">Calculate</button>
         </div>
-        <div v-show="showCalc" class="w-full items-center sm:w-1/2 md:w-1/2 py-2 sm:p-2">
-            <p class="font-bold">
-                <b>{{ calcpre }}</b>
-            </p>
-            <p class="text-brightred-50 text-xl font-bold block bg-zinc-100 p-2 my-2 rounded-md text-center">
-                {{ outputDate }}
-                </p>
-            <p class="md:text-xs">{{ calcpost }}</p>
-        </div>
+        <transition
+            enter-active-class="transition-opacity duration-300 ease-in-out"
+            enter-from-class="opacity-0"
+            enter-to-class="opacity-100"
+            leave-active-class="transition-opacity duration-300 ease-out"
+            leave-from-class="opacity-100"
+            leave-to-class="opacity-0"
+            v-on:enter="enter"
+        >
+            <div :key="outputDate" v-show="showCalc" class="w-full items-center sm:w-1/2 md:w-1/2 py-2 sm:p-2">
+                <p class="font-bold"><b>{{ calcpre }}</b></p>
+                <p class="text-brightred-50 text-xl font-bold block bg-zinc-100 p-2 my-2 rounded-md text-center">{{ outputDate }}</p>
+                <p class="md:text-xs">{{ calcpost }}</p>
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -40,14 +46,15 @@ export default {
                 var input = new Date(this.inputDate);
                 var output = new Date();
                 output = input.setDate(input.getDate() + this.$props.daysadded);
-                this.outputDate = moment(output).format('MMMM Do YYYY');
+                this.outputDate = moment(output).format('MMMM Do, YYYY');
             }
+        },
+        enter(){
+            window.scrollTo(0,document.body.scrollHeight); 
         }
     },
     updated() {
-        if(this.outputDate){
-            window.scrollTo(0,document.body.scrollHeight);
-        }
+
     }
 }
 </script>
