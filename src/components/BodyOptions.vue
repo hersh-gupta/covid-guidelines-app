@@ -12,7 +12,7 @@
             <div v-if="!selectedOpt" key="unselected" class="flex items-start w-full flex-col space-y-4 pr-4">
                 <a
                     @click="selectOpt(item)"
-                    class="cursor-pointer text-navy-500 text-2xl font-bold block p-2 hover:text-brightred-50 transition ease-in-out duration-300"
+                    class="cursor-pointer text-navy-500 text-2xl font-bold block p-2 md:hover:text-brightred-50 transition ease-in-out duration-300"
                     v-for="item in options"
                     :key="item.id"
                     :title="item.title"
