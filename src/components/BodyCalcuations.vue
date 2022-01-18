@@ -11,13 +11,14 @@
             <button @click="calculateDate(inputDate)" class="btn-calc">Calculate</button>
         </div>
         <transition
+            mode="out-in"
             enter-active-class="transition-opacity duration-300 ease-in-out"
             enter-from-class="opacity-0"
             enter-to-class="opacity-100"
             leave-active-class="transition-opacity duration-300 ease-out"
             leave-from-class="opacity-100"
             leave-to-class="opacity-0"
-            v-on:enter="enter"
+            v-on:after-enter="afterEnter"
         >
             <div :key="outputDate" v-show="showCalc" class="w-full items-center sm:w-1/2 md:w-1/2 py-2 sm:p-2">
                 <p class="font-bold"><b>{{ calcpre }}</b></p>
@@ -49,7 +50,7 @@ export default {
                 this.outputDate = moment(output).format('MMMM Do, YYYY');
             }
         },
-        enter(){
+        afterEnter(){
             window.scrollTo(0,document.body.scrollHeight); 
         }
     },
