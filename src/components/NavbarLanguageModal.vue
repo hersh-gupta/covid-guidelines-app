@@ -26,7 +26,7 @@
                   </h3>
                   <div class="mt-2">
                     <p class="text-sm text-gray-500">
-                      {{lang}} translation is not available yet. If you would like to assist with translations, please <a href="mailto:h.v.gupta@outlook.com?subject=Quarantine%20Calculator%20Translation&body=I%20would%20like%20to%20help%20with%20translating%20the%20Quarantine%20Calculator.%20I%20would%20be%20able%20to%20translate%20it%20into%20%5Blanguage(s)%5D." target="_blank" class="underline text-navy-500 decoration-2">contact us.</a>
+                      {{lang}} translation is not available yet. If you would like to assist with translations, please <a href="https://github.com/hersh-gupta/covid-guidelines-app/issues" target="_blank" class="underline text-navy-500 decoration-2">check the Github page.</a>
                     </p>
                   </div>
                 </div>
