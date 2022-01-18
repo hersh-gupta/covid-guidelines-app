@@ -19,8 +19,8 @@
                 >{{ item.title }}</a>
             </div>
 
-            <div v-else key="selected" class="flex-initial md:w-full pl-4 sm:block md:block">
-                <p @click="selectedOpt = ''" class="cursor-pointer w-1/4 text-brightred-50 text-base font-bold mb-4">&#129044; Back</p>
+            <div v-else key="selected" class="flex-initial md:w-full px-2 sm:block md:block">
+                <p @click="selectedOpt = ''" class="cursor-pointer w-1/4 text-brightred-50 text-base font-bold mb-4">&#8592; Back</p>
                 <h2 class="text-navy-500 text-2xl font-bold mb-4">{{ selectedOpt.title }}</h2>
                 <p class="text-navy-500 text-base tracking-wide mb-5" v-html="selectedOpt.detail"></p>
                 <BodyCalcuations
