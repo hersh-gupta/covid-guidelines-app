@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-full px-2 sm:px-6 md:px-20 mt-5 items-center">
+    <div class="flex w-full px-2 sm:px-6 md:px-20 mt-5 mb-auto">
         <transition
             mode="out-in"
             enter-active-class="transition-all translate-x-6 duration-100"
