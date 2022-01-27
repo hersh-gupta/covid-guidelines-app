@@ -1,15 +1,15 @@
 <script setup>
-import Navbar from './components/Navbar.vue'
-import BodyHeader from './components/BodyHeader.vue';
-import BodyOptions from './components/BodyOptions.vue';
-import FooterText from './components/FooterText.vue';
+import TheNavbar from './components/TheNavbar.vue'
+import TheBodyHeader from './components/TheBodyHeader.vue';
+import TheBodyOptions from './components/TheBodyOptions.vue';
+import TheFooterText from './components/TheFooterText.vue';
 </script>
 
 <template>
 <body class="flex flex-col h-screen">
-  <Navbar></Navbar>
-  <BodyHeader></BodyHeader>
-  <BodyOptions></BodyOptions>
-  <FooterText></FooterText>
+  <TheNavbar></TheNavbar>
+  <TheBodyHeader></TheBodyHeader>
+  <TheBodyOptions></TheBodyOptions>
+  <TheFooterText></TheFooterText>
 </body>
 </template>

@@ -1,0 +1,36 @@
+{
+  "header": {
+    "head": "Quarantine and Isolation Calculator",
+    "detail": "Select the option that most closely matches your circumstances"
+  },
+  "body": {
+    "1": {
+      "title": "You have tested positive and have symptoms",
+      "detail": "If you are symptomatic and have tested positive for COVID-19 then you must <b>isolate for 10 days from the date your symptoms began.</b><br><br> To stop or discontinue isolation, at least 10 days must have passed since your symptoms began and at least 24 hours have passed since your fever went away without the use of fever-reducing medications (such as Tylenol or Ibuprofen) and other symptoms have improved. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" target=\"_blank\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Learn more.</a>",
+      "picker": "Select the first day your symptoms began:",
+      "calcpre": "If your symptoms have improved and 24 hours have elapsed without a fever without the use of medication, your isolation ENDS on:",
+      "calcpost": "On this date, you may resume your usual activities but should still take precautions to reduce your risk (i.e. social distancing, frequent handwashing, and wearing a mask when social distancing isn't possible)."
+    },
+    "2": {
+      "title": "You have tested positive but have NO symptoms",
+      "detail": "If you test positive for COVID-19 and do not have symptoms, stay home and <b>isolate for 10 days from the day you had your test.</b><br><br>After 10 days, you can leave your house. Continue to wear a mask around others for an additional 5 days. If you cannot mask, continue to isolate at home for the 5 additional days. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Learn more.</a>",
+      "picker": "Select your most recent positive test date below:",
+      "calcpre": "If you have no symptoms, your isolation ENDS on:",
+      "calcpost": "On this date, you may resume your usual activities but should still take precautions to reduce your risk (i.e. social distancing, frequent handwashing, and wearing a mask when social distancing isn't possible)."
+    },
+    "3": {
+      "title": "You have tested positive and have symptoms",
+      "detail": "If you are symptomatic and have tested positive for COVID-19 then you must <b>isolate for 10 days from the date your symptoms began.</b><br><br> To stop or discontinue isolation, at least 10 days must have passed since your symptoms began and at least 24 hours have passed since your fever went away without the use of fever-reducing medications (such as Tylenol or Ibuprofen) and other symptoms have improved. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" target=\"_blank\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Learn more.</a>",
+      "picker": "Select the first day your symptoms began:",
+      "calcpre": "If your symptoms have improved and 24 hours have elapsed without a fever without the use of medication, your isolation ENDS on:",
+      "calcpost": "On this date, you may resume your usual activities but should still take precautions to reduce your risk (i.e. social distancing, frequent handwashing, and wearing a mask when social distancing isn't possible)."
+    },
+    "4": {
+      "title": "You have been identified as a close contact AND you are NOT fully vaccinated",
+      "detail": "<b>Stay home for 14 days from your last exposure (day zero).</b> You may end quarantine after 10 days if you do not develop symptoms during quarantine, but continue to monitor symptoms for the full 14 days. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Learn more.</a>",
+      "picker": "Select the last contact with the person who tested positive below:",
+      "calcpre": "If you are not fully vaccinated, your isolation ENDS on:",
+      "calcpost": ""
+    }
+  }
+}

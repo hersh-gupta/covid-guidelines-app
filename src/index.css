@@ -10,5 +10,5 @@
 }
 
 .nav-lang {
-    @apply cursor-pointer inline-block text-navy-500 md:hover:text-navy-200 mr-2 sm:mr-4 mt-2 md:mt-0 sm:mt-0 text-xs sm:text-xs md:text-base 
+    @apply cursor-pointer inline-block text-navy-500 mr-2 sm:mr-4 md:mr-6 mt-2 md:mt-0 sm:mt-0 text-xs sm:text-xs md:text-base md:no-underline md:hover:underline md:decoration-0 md:hover:decoration-2 md:hover:decoration-navy-500 md:hover:text-navy-200 transition-all duration-500 
 }

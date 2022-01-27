@@ -32,7 +32,7 @@
 <script>
 import moment from 'moment'
 export default {
-    name: "BodyCalculations",
+    name: "TheBodyCalculations",
     props: ['picker', 'calcpre', 'calcpost', 'daysadded'],
     data() {
         return {

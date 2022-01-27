@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "LanguageModal",
+  name: "TheNavbarLanguageModal",
   props: ['lang'],
   methods: {
       close() {

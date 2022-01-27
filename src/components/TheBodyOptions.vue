@@ -1,18 +1,18 @@
 <template>
-    <div class="flex w-full px-2 sm:px-6 md:px-20 mt-5 mb-auto">
+    <div class="flex justify-start w-full px-2 sm:px-6 md:px-20 mt-5 mb-auto">
         <transition
             mode="out-in"
-            enter-active-class="transition-all translate-x-6 duration-100"
+            enter-active-class="transition-all duration-100 ease-in-out"
             enter-from-class="opacity-0"
             enter-to-class="opacity-100"
-            leave-active-class="transition-all -translate-x-6 duration-100"
+            leave-active-class="transition-all duration-100 ease-in-out"
             leave-from-class="opacity-100"
             leave-to-class="opacity-0"
         >
-            <div v-if="!selectedOpt" key="unselected" class="flex items-start w-full flex-col space-y-4 pr-4">
+            <div v-if="!selectedOpt" key="unselected" class="flex flex-col w-full m-auto space-y-4 sm:space-y-6 md:space-y-8 sm:w-9/12 md:w-8/12 lg:5/12 pb-2 px-2 sm:px-0 md:px-0">
                 <a
                     @click="selectOpt(item)"
-                    class="cursor-pointer text-navy-500 text-2xl font-bold block p-2 md:hover:text-brightred-50 transition ease-in-out duration-300"
+                    class="cursor-pointer text-navy-500 text-2xl sm:text-3xl md:text-3xl font-bold block px-2 py-2 md:hover:text-brightred-50 md:hover:shadow-lg transition ease-in-out duration-300 bg-zinc-100 rounded-md shadow-md border-b-4 border-navy-500"
                     v-for="item in options"
                     :key="item.id"
                     :title="item.title"
@@ -23,7 +23,7 @@
                 <p @click="selectedOpt = ''" class="cursor-pointer w-1/4 text-brightred-50 text-base font-bold mb-4">&#8592; Back</p>
                 <h2 class="text-navy-500 text-2xl font-bold mb-4">{{ selectedOpt.title }}</h2>
                 <p class="text-navy-500 text-base tracking-wide mb-5" v-html="selectedOpt.detail"></p>
-                <BodyCalcuations
+                <TheBodyCalcuations
                     ref="bodycalc"
                     :picker="selectedOpt.picker"
                     :calcpre="selectedOpt.calcpre"
@@ -38,9 +38,9 @@
 </template>
 
 <script>
-import BodyCalcuations from "./BodyCalcuations.vue"
+import TheBodyCalcuations from "./TheBodyCalcuations.vue"
 export default {
-    name: "BodyOptions",
+    name: "TheBodyOptions",
     data() {
         return {
             selectedOpt: "",
@@ -86,16 +86,15 @@ export default {
     },
     methods: {
         selectOpt(item) {
-            if (window.scrollY) {
+            /* if (window.scrollY) {
                 window.scroll(0, 0);  // reset the scroll position to the top left of the document.
-                }
+                } */
             this.selectedOpt = item;
             this.$refs.bodycalc.showCalc = false;
             this.$refs.bodycalc.inputDate = '';
         }
     },
-    updated() {},
 
-    components: { BodyCalcuations }
+    components: { TheBodyCalcuations }
 }
 </script>

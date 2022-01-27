@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-neutral-200 py-4 sm:py5 md:py-6 px-2 sm:px-6 md:px-20">
+    <nav class="flex items-center justify-between flex-wrap shadow-lg bg-zinc-100 py-4 sm:py-5 md:py-6 px-2 sm:px-6 md:px-20">
         <div class="flex items-center flex-shrink text-brightred-50 mr-6">
             <!--<img title="logo" alt="Health Logo" class="object-scale-down h-5 sm:h-8 md:h-11" src="logo.svg"/>-->
             <h1 class="text-brightred-50 text-base sm:text-xl md:text-3xl font-bold">Health|Department</h1>
@@ -7,22 +7,27 @@
 
         <div class="flex items-center w-auto">
             <div>
-                <a @click="showModal(item)" class="nav-lang" v-for="item in languages" :key="item.id" :title="item.lang">{{ item.text }}</a>
+                <a @click="showModal(item)" 
+                class="nav-lang" 
+                v-for="item in languages" 
+                :key="item.id" 
+                :title="item.lang">{{ item.text }}
+                </a>
             </div>
         </div>
     </nav>
-    <NavbarLanguageModal 
+    <TheNavbarLanguageModal 
         v-show="isModalVisible" 
         :lang='selectedLang'
         @close="closeModal"/>
 </template>
 
 <script>
-import NavbarLanguageModal from "./NavbarLanguageModal.vue"
+import TheNavbarLanguageModal from "./TheNavbarLanguageModal.vue"
 export default {
-    name: "navbar",
+    name: "TheNavbar",
     components: {
-        NavbarLanguageModal
+        TheNavbarLanguageModal
     },
     data() {
         return {
@@ -32,32 +37,38 @@ export default {
                 {
                     id: 1,
                     lang: 'Amharic',
-                    text: 'አማርኛ'
+                    text: 'አማርኛ',
+                    locale: 'am'
                 },
                 {
                     id: 2,
                     lang: 'Chinese (Simplified)',
-                    text: '中文'
+                    text: '中文',
+                    locale: 'zh'
                 },
                 {
                     id: 3,
                     lang: 'French',
-                    text: 'Français'
+                    text: 'Français',
+                    locale: 'fr'
                 },
                 {
                     id: 4,
                     lang: 'Korean',
-                    text: '한국어'
+                    text: '한국어',
+                    locale: 'ko'
                 },
                 {
                     id: 5,
                     lang: 'Spanish',
-                    text: 'Español'
+                    text: 'Español',
+                    locale: 'es'
                 },
                 {
                     id: 6,
                     lang: 'Vietnamese',
-                    text: 'Tiếng Việt'
+                    text: 'Tiếng Việt',
+                    locale: 'vi'
                 }
             ]
         }
