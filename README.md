@@ -16,6 +16,13 @@ The design for this calculator consists of three guiding principles:
 2. `git clone` this repository
 3. Open a terminal and run `npm build dev` in the repo directory
 
+## To-do
+- [x] Add language support via i18n
+- [ ] Optimize i18n code in BodyOptions component
+- [ ] Save language state
+- [ ] Add routing and chunking for better load times
+- [ ] Separate guideline parameters into config files
+
 ## Credits
 
 Made using [Tailwind](https://tailwindcss.com/), [Vue](https://vuejs.org/), and [Vite](https://vitejs.dev/).

@@ -8,7 +8,7 @@
                 class="form-input border border-gray-300 text-navy-500 text-base sm:text-sm rounded-lg focus:ring-blue-500 focus:border-navy-500 block w-full p-2.5 my-2"
                 placeholder="Select date"
             />
-            <button @click="calculateDate(inputDate)" class="btn-calc">Calculate</button>
+            <button @click="calculateDate(inputDate)" class="btn-calc">{{ $t('buttons.calculate') }}</button>
         </div>
         <transition
             mode="out-in"
@@ -42,13 +42,11 @@ export default {
     },
     methods: {
         calculateDate(inputDate) {
-            if (inputDate) {
                 this.showCalc = true;
-                var input = new Date(this.inputDate);
+                var input = new Date(inputDate);
                 var output = new Date();
                 output = input.setDate(input.getDate() + this.$props.daysadded);
                 this.outputDate = moment(output).format('MMMM Do, YYYY');
-            }
         },
         afterEnter(){
             window.scrollTo(0,document.body.scrollHeight); 

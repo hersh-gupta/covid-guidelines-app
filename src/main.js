@@ -1,16 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+/* import router from './router/index' */
 import './index.css'
-/* import { setupI18n } from './i18n.js' */
-/* import messages from '@intlify/vite-plugin-vue-i18n/messages' */
+import i18n from './i18n';
 
-/* const i18n = setupI18n({
-    legacy: false,
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages
-  })  */
-
-createApp(App)
-/* .use(i18n) */
-.mount('#app')
+const app = createApp(App);
+/* app.use(router); */
+app.use(i18n);
+app.mount("#app");

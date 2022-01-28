@@ -7,8 +7,8 @@
 
         <div class="flex items-center w-auto">
             <div>
-                <a @click="showModal(item)" 
-                class="nav-lang" 
+                <a @click="setLocale(item)" 
+                :class="{'nav-lang-selected': item.locale === this.$i18n.locale, 'nav-lang': item.locale != this.$i18n.locale}"
                 v-for="item in languages" 
                 :key="item.id" 
                 :title="item.lang">{{ item.text }}
@@ -69,14 +69,24 @@ export default {
                     lang: 'Vietnamese',
                     text: 'Tiếng Việt',
                     locale: 'vi'
+                },
+                {
+                    id: 7,
+                    lang: 'English',
+                    text: 'English',
+                    locale: 'en'
                 }
             ]
         }
     },
     methods: {
-        showModal(item) {
-            this.isModalVisible = true;
-            this.selectedLang = item.lang;
+        setLocale(item) {
+            if(this.$i18n.availableLocales.includes(item.locale)){
+                this.$i18n.locale = item.locale;
+            } else {
+                this.isModalVisible = true;
+                this.selectedLang = item.lang
+            }
         },
         closeModal() {
             this.isModalVisible = false;
