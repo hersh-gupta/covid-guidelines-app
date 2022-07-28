@@ -1,0 +1,47 @@
+{
+  "header": {
+    "head": "Công cụ tính thời gian cách ly khi có triệu trứng hoặc bị nhiễm Covid",
+    "detail": "Chọn những lựa chọn đáp ứng với các tình huống của bạn"
+  },
+  "buttons":{
+    "calculate": "Tính toán"
+  },
+  "opts": [
+    {
+      "id": 1,
+      "title": "Kết quả xét nghiệm Covid của bạn là dương tính và bạn có các triệu trứng của Covid",
+      "detail": "Nếu bạn có các triệu trứng và xét ngiệm có cho Covid-19, bạn cần phải <b>cách ly 10 ngày từ ngày bạn có các triệu trứng Covid-19.</b><br><br> Để ngừng cách ly, cần đợi tới 10 ngày từ ngày bạn có triệu trứng và ít nhất 24 giờ sau khi bạn hết sốt một cách tự nhiên và không sử dụng các thuốc để hạ sốt (Tylenol hoặc Ibuprofen), đồng thời với không còn các triệu trứng liên quan tới Covid-19. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" target=\"_blank\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Tìm hiểu thêm.</a>",
+      "picker": "Chọn ngày bạn có các dấu hiệu bệnh của Covid-19:",
+      "calcpre": "Nếu như các triệu trứng Covid-19 của bạn đã được cải thiện và đợi 24 giờ sau không có dấu hiệu sốt cao, thời gian cách ly của bạn đã KẾT THÚC:",
+      "calcpost": "Kể từ ngày hôm nay, bạn có thể sin hoạt các hoạt động bình thường nhưng đề nghị có các biện pháp đề phòng để giảm khả năng bị nhiễm lại(tạo khoảng cách, rửa tay thường xuyên, và đeo khẩu trang nếu không thể tạo khoảng cách).",
+      "daysadded": 11
+    },
+    {
+      "id": 2,
+      "title": "Kết quả xét nghiệm Covid của bạn là dương tính nhưng bạn KHÔNG CÓ các triệu trứng của Covid",
+      "detail": "Nếu kết quả xét nghiệm Covid của bạn là có nhưng bạn không có các triệu trứng của Covid, đề nghị ở nhà và <b>cách ly 10 ngày từ ngày bạn có kết quả xét nghiệm Covid-19.</b><br><br>Sau 10 ngày, bạn có thể rời khỏi nhà. Tiếp tục sử dụng khẩu trang khi đi ra ngoài thêm 5 ngày. Nếu bạn không có thể đeo khẩu trang, tiếp tục cách ly thêm 5 ngày. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Tìm hiểu thêm.</a>",
+      "picker": "Chọn ngày bạn có các dấu hiệu bệnh của Covid-19 gần nhất:",
+      "calcpre": "Nếu như bạn không có triệu trứng, thời gian cách ly KẾT THÚC:",
+      "calcpost": "Kể từ ngày hôm nay, bạn có thể sin hoạt các hoạt động bình thường nhưng đề nghị có các biện pháp đề phòng để giảm khả năng bị nhiễm lại(tạo khoảng cách, rửa tay thường xuyên, và đeo khẩu trang nếu không thể tạo khoảng cách).",
+      "daysadded": 11
+    },
+    {
+      "id": 3,
+      "title": "Kết quả xét nghiệm Covid của bạn là dương tính và bạn có các triệu trứng của Covid",
+      "detail": "Nếu bạn có các triệu trứng và xét ngiệm có cho Covid-19, bạn cần phải <b>cách ly 10 ngày từ ngày bạn có các triệu trứng Covid-19.</b><br><br> Để ngừng cách ly, cần đợi tới 10 ngày từ ngày bạn có triệu trứng và ít nhất 24 giờ sau khi bạn hết sốt một cách tự nhiên và không sử dụng các thuốc để hạ sốt (Tylenol hoặc Ibuprofen), đồng thời với không còn các triệu trứng liên quan tới Covid-19. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" target=\"_blank\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Tìm hiểu thêm.</a>",
+      "picker": "Chọn ngày bạn có các dấu hiệu bệnh của Covid-19",
+      "calcpre": "Nếu như các triệu trứng Covid-19 của bạn đã được cải thiện và đợi 24 giờ sau không có dấu hiệu sốt cao, thời gian cách ly của bạn KẾT THÚC:",
+      "calcpost": "Kể từ ngày hôm nay, bạn có thể sin hoạt các hoạt động bình thường nhưng đề nghị có các biện pháp đề phòng để giảm khả năng bị nhiễm lại(tạo khoảng cách, rửa tay thường xuyên, và đeo khẩu trang nếu không thể tạo khoảng cách).",
+      "daysadded": 15
+    },
+    {
+      "id": 4,
+      "title": "Bạn bị đặt vào nhóm người theo dõi của Covid và bạn KHÔNG chích ngừa Covid-19",
+      "detail": "<b>Ở nhà trong 14 ngày từ ngày bạn tiếp xúc.</b> Bạn có thể ngừng cách ly nếu như sau 10 ngày bạn không có dấu hiệu của các triệu trứng Covid-19, nhưng cần phải dõi cho các dấu hiệu trong 14 ngày. <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html\" class=\"underline decoration-navy-500 decoration-2 font-bold\">Tìm hiểu thêm.</a>",
+      "picker": "Chọn tên người bạn tiếp xúc có xét nghiệm Covid dương tính:",
+      "calcpre": "Nếu bạn chưa chích đủ thuốc Covid, thời gian cách ly của bạn KẾT THÚC:",
+      "calcpost": "",
+      "daysadded": 15
+    }
+  ]
+}
