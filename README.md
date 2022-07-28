@@ -14,7 +14,7 @@ The design for this calculator consists of three guiding principles:
 
 1. Make sure you have [node js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed
 2. `git clone` this repository
-3. Open a terminal and run `npm build dev` in the repo directory
+3. Open a terminal and run `npx vite preview` in the repo directory
 
 ## To-do
 - [x] Add language support via i18n
